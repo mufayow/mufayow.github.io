@@ -1,0 +1,71 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+<div class="w3-container">
+ <img src="banner.jpg" width="100%" height="25%">
+</div>
+<div class="w3-bar w3-orange">
+ <button class="w3-bar-item w3-button" onclick="openKota('home')">home</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('carakter')">carakter</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('cara')">cara</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('haram')">apakah among us haram?</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('profil')">profil</button>
+</div>
+<div id="home" class="w3-container kota w3-animate-zoom" style="display:none">
+ <h2>Among US</h2>
+ <p>Among Us adalah game sosial online yang dikembangkan dan dirilis oleh InnerSloth pada 15 Juni 2018. 
+    Among Us merupakan permainan multiplayer yang menuntut kerja sama tim dan usaha pengkhianatan. 
+    Among Us dapat dimainkan oleh 4-10 pemain secara online maupun LAN.</p>
+</div>
+<div id="carakter" class="w3-container kota w3-animate-zoom" style="display:none">
+    <h2>karakter di Among Us</h2>
+    <p>Ada dua peran yang berbeda, yaitu crewmate dan impostor.
+         Crewmate merupakan peran baik yang dituntut untuk menyelesaikan misi kecil yakni memperbaiki pesawat.
+        impostor merupakan peran jahat yang menuntut player untuk menjadi pengkhianat dan memiliki misi menghabisi semua anggota crewmate.
+        </p>
+   </div>
+   <div id="cara" class="w3-container kota w3-animate-zoom" style="display:none">
+    <h2>cara bermain Among Us</h2>
+    <p>Dalam game ini, para pemain harus bisa bekerja sama untuk meyakinkan satu sama lain.
+        Pemain yang mendapat peran sebagai crewmate harus berhati-hati. Mereka tidak bisa melihat player mana yang menjadi impostor.
+        Sebaliknya, impostor bisa mengenali pemain impostor lainnya dan bekerja sama untuk menghabiskan crewmate.
+        Impostor dapat berpura-pura ikut menjalankan misi. Hal itu dilakukan sebagai cara untuk mendapatkan kepercayaan orang lain.
+        Crewmate yang dibunuh akan menjadi hantu, nantinya player tetap bisa melihat jalannya permainan namun tidak bisa berkomunikasi dengan pemain lain yang masih hidup. 
+        Ketika ada mayat crewmate yang ditemukan, para pemain bisa memulai diskusi untuk menentukan impostor.
+        Waktu diskusi 75 menit yang dikatakan dapat "merusak pertemanan", karena mereka bisa saling tuduh satu sama lain.
+        Pemain dipersilahkan untuk memanfaatkan fitur chat yang ada di dalam game atau kembali menyalakan Discord.
+        Dalam diskusi, impostor harus pandai berakting dan mengelak apabila dicurigai agar tidak ketahuan.
+        Dalam diskusi pemain akan melakukan voting untuk menentukan siapa terduga impostor yang akan dikeluarkan dari pesawat
+        Pemain memilih untuk menyeleksi pemain lain atau bersikap netral dengan menekan tombol "Skip vote".
+        Pemain dengan suara terbanyak akan dieliminasi dan identitas pemain tersebut akan terungkap.        
+        </p>
+   </div>
+   <div id="haram" class="w3-container kota w3-animate-zoom" style="display:none">
+    <h2>Apakah Among US haram?</h2>
+    <p>Pertanyaan tersebut memang terdengar sedikit aneh. Namun, ternyata hal tersebut merupakan bentuk komplain dari viralnya game Among Us yang belakangan ini semakin banyak digunakan para gamers. 
+        Isu haram ini tentu membuat beberapa pemain merasa kurang nyaman untuk bisa terus memainkannya.
+        Hal ini sebenarnya berdasarkan fatwa yang kurang valid dimana menyebut bahwa game ini haram.
+        Namun banyak juga yang mengatakan bahwa isu tersebut memiliki alasan kuat. Misalnya saja Among Us memang melakukan kill terhadap pemain lain. 
+        Kemudian menuduh pemain tersebut dan mencoba menghindari tuduhan tersebut. Jadi para pemain harus berdalih sekalipun berbohong agar tidak ketahuan.
+        Karena banyak sekali hal negatif yang bisa diambil dari game yang viral ini tidak heran jika banyak yang mengatakannya haram.</p>
+   </div>
+   <div id="profil" class="w3-container kota w3-animate-zoom" style="display:none">
+   <center><h2>Profil yang bikin web ini</h2>
+    <p><img src="IMG_9121.JPG" width="25%"></p>
+    <p> Nama Muhamad Mufa Syhabudin</p>
+    <p> Nim 10122128</p>
+    <p> teknik informatika 4</p>
+<script>
+function openKota(namakota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namakota).style.display = "block"; 
+}
+</script>
+</body>
+</html>
